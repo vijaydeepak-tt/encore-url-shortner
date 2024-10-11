@@ -1,14 +1,15 @@
-# Empty Encore TS Template
+# URL Shortener with Encore
 
 ## Developing locally
 
 When you have [installed Encore](https://encore.dev/docs/install), you can create a new Encore application and clone this example with this command.
 
 ```bash
-encore app create my-app-name --example=ts/empty
+encore app create
 ```
 
 ## Running locally
+
 ```bash
 encore run
 ```
@@ -36,3 +37,19 @@ Now off you go into the clouds!
 ```bash
 encore test
 ```
+
+## Commands used
+
+```bash
+encore db shell <database-name>
+```
+
+connect to Docker DB in shell
+
+## DB Requirement
+
+- Need docker installed and running
+- create a migration file's inside the migration (Refer files in: ./url/migrations )
+- After setting up the SQLDatabase run the App
+- It automatically creates the database in the docker.
+- Even after restarting the docker the data stored will not be destroyed
